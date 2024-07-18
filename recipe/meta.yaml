@@ -1,5 +1,5 @@
 {% set name = "typenames" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/typenames-{{ version }}.tar.gz
-  sha256: a694a19aecf5884b2c52cdf9a03b501bc7ee9a03131bfa58b2a6b072182270a7
+  sha256: 205a1954512e28b6558e761c134e74d243003755676fe8cce49250b8fc192798
 
 build:
   noarch: python
@@ -21,7 +21,6 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - typing-extensions >4
 
 test:
   imports:
