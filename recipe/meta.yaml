@@ -35,9 +35,9 @@ about:
   summary: String representations of Python type annotations.
   license: MIT
   license_file: LICENSE
-  home: https://github.com/jayqi/typenames
-  dev_url: https://github.com/jayqi/typenames
-  doc_url: https://jayqi.github.io/typenames/
+  home: https://github.com/drivendataorg/typenames
+  dev_url: https://github.com/drivendataorg/typenames
+  doc_url: https://typenames.drivendata.org/stable/
 
 extra:
   recipe-maintainers:
