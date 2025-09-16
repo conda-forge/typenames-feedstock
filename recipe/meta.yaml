@@ -1,5 +1,5 @@
 {% set name = "typenames" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/typenames-{{ version }}.tar.gz
-  sha256: f92e89e9675ae59cead14483ff85f04bbd15c3fe73f6820a9567631d5ef0308e
+  sha256: af231a91e8c377a5497693944d604865164adaf8754d17f521e61b0fbb1f6bf9
 
 build:
   noarch: python
@@ -35,9 +35,9 @@ about:
   summary: String representations of Python type annotations.
   license: MIT
   license_file: LICENSE
-  home: https://github.com/jayqi/typenames
-  dev_url: https://github.com/jayqi/typenames
-  doc_url: https://jayqi.github.io/typenames/
+  home: https://github.com/drivendataorg/typenames
+  dev_url: https://github.com/drivendataorg/typenames
+  doc_url: https://typenames.drivendata.org/stable/
 
 extra:
   recipe-maintainers:
