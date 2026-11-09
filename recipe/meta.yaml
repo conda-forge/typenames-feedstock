@@ -1,13 +1,13 @@
 {% set name = "typenames" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/typenames-{{ version }}.tar.gz
-  sha256: af231a91e8c377a5497693944d604865164adaf8754d17f521e61b0fbb1f6bf9
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/typenames-{{ version }}.tar.gz
+  sha256: 7d64e8432e7ed0cb583afd1b6d44bcb3c8d55d0b76f69e5f58c1a251131aa42a
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - hatchling
+    - uv-build >=0.13.0,<0.14.0
     - pip
   run:
     - python >={{ python_min }}
